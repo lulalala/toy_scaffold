@@ -1,9 +1,3 @@
 require "toy_scaffold/version"
-
-module ToyScaffold
-  class Railtie < Rails::Railtie
-    config.app_generators do |g|
-      g.templates.unshift File::expand_path('../templates', __FILE__)
-    end
-  end
-end
+require 'rails/generators/rails/scaffold_controller/scaffold_controller_generator' # preload in order to override
+require "toy_scaffold/scaffold_controller_generator"
