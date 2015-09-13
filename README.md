@@ -8,6 +8,8 @@ The changes include:
 - Do not use `respond_to`, but just assume HTML instead.
 - Comment about each action's respective view file path
 
+[Check out how a scaffolded controller looks like here](https://gist.github.com/lulalala/02b9e75a54a96ad20d4f)
+
 ## Installation
 
 Add this line to your Rails application's Gemfile:
